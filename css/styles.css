@@ -1,5 +1,185 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f7fa;
+    padding: 40px 20px;
+}
+
+.wrapper {
+    background: #ffffff;    
+    display: flex;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+aside {
+    background: #1e2939;
+    width: 370px;
+    padding: 40px 0;
+    color: #ffffff;
+    line-height: 24px;
+}
+
+aside img {
+    width: inherit;    
+}
+
+aside > div {
+    margin: 50px 40px 0;
+}
+
+aside h3 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+aside li {
+    font-size: 14px;
+    font-weight: 400;    
+}
+
+aside li:before {
+    color: #ff6b08;
+    content: "•";
+    padding-right: 10px;
+}
+
+aside span {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+aside a {
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: 400;    
+    text-decoration: underline;
+}
+
+main {
+    padding: 110px 90px;
+    color: #000000;    
+}
+
+main > div:not(:first-child) {
+    margin-top: 55px;
+}
+
+main h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+main h2 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+main h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;    
+}
+
+main h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+main h4 span {
+    color: #ff6b08;
+}
+
+main h4 ~ span {
+    color: #a8a8a8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+main h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+main p {
+    color: #595959;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+main ul li {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+main ol {
+    margin-top: 12px;
+    counter-reset: num;
+}
+
+main ol li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #595959;    
+}
+
+main ol li::before {
+    content: counter(num) '. ';
+    counter-increment: num;
+    font-weight: 700;
+    color: #000000;
+    margin-right: 5px;
+}
+
+main ol li a {
+    color: #595959;
+    text-decoration: none;
+}
+
+main ol li .dots {
+    display: inline-block;    
+    border-bottom: 1px dotted #d2d2d2;
+}
+
+main ol li:nth-child(1) .dots {
+    width: 107px;    
+}
+
+main ol li:nth-child(2) .dots {
+    width: 135px;    
+}
+
+main ol li:nth-child(3) .dots {
+    width: 135px;    
+}
+
+main ol li span::before {
+    content: '[ ';    
+    font-weight: 700;
+    color: #000000;
+}
+
+main ol li span::after {
+    content: ' ]';    
+    font-weight: 700;
+    color: #000000;
 }
